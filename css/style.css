@@ -5,11 +5,19 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
 /* HEADER  */
 header {
     width: 100%;
     background-color: #FF6900;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .categories {
@@ -19,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
 }
 
 .logo {
@@ -28,17 +37,21 @@ header {
 
 .icons {
     color: white;
+   
 }
 
 li {
     list-style-type: none;
     display: inline-block;
     padding: 5px;
+    
 }
 
 a {
     text-decoration: none;
     color: white;
+    
+   
 }
 
 /* MAIN  */
@@ -47,18 +60,18 @@ a {
     width: 80%;
     max-width: 1100px;
     margin: auto;
-    position: relative;
+    position: relative;  
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    padding-top: 150px;
 }
 
 /* Common  */
 .column {
-    border: 2px solid red;
     height: 600px;
     width: calc(100% /3 - (50px / 3));
 }
@@ -66,10 +79,24 @@ a {
 .img-col { 
     max-width: 100%;
     max-height: 80%;
-    
-
 }
 
+.img-hover {
+    display: none;
+}
+
+.card:hover .img-hover {
+    display: block;
+}
+
+.card:hover .img-col {
+    display: none;
+}
+
+.img-hover {
+    max-width: 100%;
+    max-height: 80%;
+}
 .discount {
     font-size: 12px;
     background-color: red;
@@ -87,29 +114,49 @@ a {
 .position { 
     position: relative;
     bottom: 45px;
-
 }
 
 .card {
-    position: relative;
-    
-  
-    
+    position: relative;   
 }
 
 .heart {
     position: absolute;
     top: 10px;
     right: 0px;
-    height: 35px;
     width: 10%;
     background-color: white;
     text-align: center;
     font-size: 30px;
 }
 
-.card-text {
-   
 
+.crossed-price {
+    text-decoration: line-through;
+    color: black;
+}
+
+.price {
+    color: red;
+}
+
+
+/* FOOTER  */
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #1A1A1A;
+    color: white;
   
+}
+
+.foot-sect {
+    width: 75%;
+    margin: auto; 
+    padding: 15px; 
+}
+
+.social {
+    font-size: 15px;
 }
