@@ -14,7 +14,7 @@ header {
 
 .categories {
     height: 100px;
-    width: 60%;
+    width: 75%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -22,8 +22,8 @@ header {
 }
 
 .logo {
-    height: 25px;
-    width: 10%;
+    height: 35px;
+    width: 15%;
 }
 
 .icons {
@@ -39,4 +39,77 @@ li {
 a {
     text-decoration: none;
     color: white;
+}
+
+/* MAIN  */
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Common  */
+.column {
+    border: 2px solid red;
+    height: 600px;
+    width: calc(100% /3 - (50px / 3));
+}
+
+.img-col { 
+    max-width: 100%;
+    max-height: 80%;
+    
+
+}
+
+.discount {
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.green-card {
+    font-size: 12px;
+    background-color: #008000;
+    color: white;
+    padding: 5px;
+}
+
+.position { 
+    position: relative;
+    bottom: 45px;
+
+}
+
+.card {
+    position: relative;
+    
+  
+    
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    height: 35px;
+    width: 10%;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-text {
+   
+
+  
 }
